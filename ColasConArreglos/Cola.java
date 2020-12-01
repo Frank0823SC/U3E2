@@ -12,7 +12,8 @@ public class Cola {
     public boolean ColaV(){
         if(ini == null){
             return true;
-        }else{
+        }
+        else{
             return false;
         }
     }
@@ -25,7 +26,8 @@ public class Cola {
         if (ColaV()) {
             ini = nod;
             fiin = nod;
-        } else {
+        }
+        else{
             fiin.sig = nod;
             fiin = nod;
         }   
@@ -38,11 +40,13 @@ public class Cola {
             if (ini == fiin) {
                 ini = null;
                 fiin = null;
-            } else {
+            }
+            else{
                 ini = ini.sig;
             }
             return palabra;
-        } else {
+        }
+        else{
             return null;
         }
     }
